@@ -3,283 +3,700 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Philip Harrison — Lanzarote Property Sale: Spanish CGT Breakdown Report</title>
-  <meta name="description" content="Full Spanish capital gains tax breakdown report for Philip Harrison's Lanzarote property sale. Los Romeros Limited, Company No. 06993349."/>
+  <title>Philip Harrison — Lanzarote Property Sale: Spanish CGT Report</title>
+  <meta name="description" content="Full capital gains tax analysis for the sale of Philip Harrison's Lanzarote property held via Los Romeros Limited."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
   <style>
-    :root{--navy:#1a2744;--navy2:#243560;--gold:#c9952a;--gold2:#e8b44e;--white:#ffffff;--lgrey:#f5f7fa;--mgrey:#6b7280;--dgrey:#374151;--border:#e2e8f0;--blue-bg:#dbeafe;--blue-b:#3b82f6;--amb-bg:#fef3c7;--amb-b:#d97706;--red-bg:#fee2e2;--red-b:#dc2626;--talt:#f0f4fa;--radius:10px}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Inter',sans-serif;background:var(--lgrey);color:var(--dgrey);line-height:1.65;font-size:16px}
-    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--white);padding:40px 16px 36px;text-align:center}
-    .hero-badge{display:inline-block;background:rgba(201,149,42,0.25);border:1px solid var(--gold);color:var(--gold2);font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:4px 14px;border-radius:999px;margin-bottom:16px}
-    .hero h1{font-family:'Playfair Display',serif;font-size:1.7rem;line-height:1.25;margin:0 auto 12px}
-    .hero p{color:#94a3b8;font-size:0.88rem;margin-bottom:4px}
-    @media(min-width:600px){.hero{padding:56px 20px 48px}.hero h1{font-size:2.4rem;max-width:720px}.hero p{font-size:0.95rem}}
-    .kpi-strip{display:grid;grid-template-columns:1fr 1fr;background:var(--white);border-bottom:3px solid var(--gold);box-shadow:0 4px 20px rgba(0,0,0,0.08)}
-    .kpi{padding:16px 10px;text-align:center;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .kpi:nth-child(2n){border-right:none}.kpi:nth-last-child(-n+2){border-bottom:none}
-    .kpi-val{font-size:1.4rem;font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:4px}
-    .kpi-label{font-size:0.65rem;color:var(--mgrey);text-transform:uppercase;letter-spacing:0.06em;font-weight:500}
-    @media(min-width:640px){.kpi-strip{grid-template-columns:repeat(4,1fr)}.kpi{padding:22px 16px;border-bottom:none}.kpi:nth-child(2n){border-right:1px solid var(--border)}.kpi:last-child{border-right:none}.kpi-val{font-size:1.7rem}.kpi-label{font-size:0.72rem}}
-    .container{max-width:880px;margin:0 auto;padding:0 12px 48px}
-    @media(min-width:600px){.container{padding:0 20px 60px}}
-    .section{background:var(--white);border-radius:var(--radius);box-shadow:0 2px 12px rgba(0,0,0,0.06);margin-top:20px;overflow:hidden}
-    @media(min-width:600px){.section{margin-top:28px}}
-    .section-header{background:var(--navy);color:var(--white);padding:14px 16px;display:flex;align-items:center;gap:10px}
-    @media(min-width:600px){.section-header{padding:16px 24px}}
-    .section-num{background:var(--gold);color:var(--navy);font-weight:700;font-size:0.72rem;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .section-header h2{font-size:0.95rem;font-weight:600}
-    @media(min-width:600px){.section-header h2{font-size:1rem}}
-    .section-body{padding:16px}
-    @media(min-width:600px){.section-body{padding:24px}}
-    .subsec-title{font-size:0.78rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;margin:20px 0 10px}
-    .subsec-title:first-child{margin-top:0}
-    p{margin-bottom:12px;font-size:0.92rem}
-    @media(min-width:600px){p{font-size:0.94rem}}
-    .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0;border-radius:6px}
-    table.dt{width:100%;border-collapse:collapse;font-size:0.82rem;min-width:300px}
-    table.dt thead tr{background:var(--navy);color:var(--white)}
-    table.dt thead th{padding:9px 12px;text-align:left;font-weight:600;font-size:0.78rem;white-space:nowrap}
-    table.dt tbody tr:nth-child(odd){background:var(--white)}
-    table.dt tbody tr:nth-child(even){background:var(--talt)}
-    table.dt td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top;font-size:0.85rem}
-    table.dt td.right{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-    @media(min-width:600px){table.dt td{padding:9px 14px;font-size:0.88rem}table.dt thead th{padding:10px 14px;font-size:0.82rem}}
-    table.calc{width:100%;border-collapse:collapse;margin:12px 0}
-    table.calc tr td{padding:8px 12px;border-bottom:1px solid var(--border);font-size:0.88rem}
-    table.calc tr:nth-child(odd) td{background:var(--white)}
-    table.calc tr:nth-child(even) td{background:var(--talt)}
-    table.calc tr.total td{background:var(--lgrey);font-weight:700;color:var(--navy);font-size:0.95rem;border-top:2px solid var(--navy)}
-    table.calc tr.spacer td{background:var(--white);color:var(--mgrey);font-style:italic}
-    table.calc .r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-    @media(min-width:600px){table.calc tr td{padding:9px 14px;font-size:0.9rem}table.calc tr.total td{font-size:1rem}}
-    .alert{border-left:4px solid;border-radius:0 8px 8px 0;padding:11px 14px;margin:14px 0;font-size:0.85rem;line-height:1.5}
-    .alert strong{display:block;margin-bottom:3px;text-transform:uppercase;font-size:0.72rem;letter-spacing:0.06em}
-    .alert.info{background:var(--blue-bg);border-color:var(--blue-b);color:#1e40af}
-    .alert.warning{background:var(--amb-bg);border-color:var(--amb-b);color:#92400e}
-    .alert.caution{background:var(--red-bg);border-color:var(--red-b);color:#991b1b}
-    .kpi-row{display:grid;grid-template-columns:1fr;background:var(--navy);border-radius:8px;overflow:hidden;margin:16px 0}
-    .kpi-row .kp{padding:14px 12px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.1)}
-    .kpi-row .kp:last-child{border-bottom:none}
-    .kpi-row .kv{font-size:1.4rem;font-weight:700;color:var(--white)}
-    .kpi-row .kl{font-size:0.7rem;color:#94a3b8;margin-top:3px}
-    @media(min-width:480px){.kpi-row{grid-template-columns:repeat(3,1fr)}.kpi-row .kp{border-bottom:none;border-right:1px solid rgba(255,255,255,0.1)}.kpi-row .kp:last-child{border-right:none}.kpi-row .kv{font-size:1.5rem}}
-    .checklist{list-style:none}
-    .checklist li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border);font-size:0.9rem;line-height:1.55}
-    .checklist li:last-child{border-bottom:none}
-    .chk-box{width:22px;height:22px;border:2px solid var(--border);border-radius:5px;flex-shrink:0;margin-top:2px;background:var(--white)}
-    .checklist li strong{color:var(--navy)}
-    .summary-strip{background:var(--navy);border-radius:var(--radius);overflow:hidden;margin-top:20px}
-    @media(min-width:600px){.summary-strip{margin-top:28px}}
-    .summary-strip .sh{padding:14px 16px;background:rgba(0,0,0,0.2);font-weight:700;color:var(--white);font-size:0.9rem;border-bottom:1px solid rgba(255,255,255,0.1)}
-    @media(min-width:600px){.summary-strip .sh{padding:14px 24px}}
-    table.sum{width:100%;border-collapse:collapse}
-    table.sum tr td{padding:9px 16px;font-size:0.85rem;color:#e2e8f0;border-bottom:1px solid rgba(255,255,255,0.08)}
-    @media(min-width:600px){table.sum tr td{padding:10px 24px;font-size:0.9rem}}
-    table.sum tr:nth-child(even) td{background:rgba(255,255,255,0.04)}
-    table.sum tr.sum-total td{color:var(--gold2);font-weight:700;font-size:0.95rem;border-top:1px solid var(--gold)}
-    table.sum .sr{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-    .toc{background:var(--white);border-radius:var(--radius);box-shadow:0 2px 12px rgba(0,0,0,0.06);margin-top:20px;padding:16px}
-    @media(min-width:600px){.toc{margin-top:28px;padding:20px 24px}}
-    .toc h3{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--mgrey);margin-bottom:10px}
-    .toc ol{padding-left:18px}
-    .toc li{margin-bottom:8px}
-    .toc a{color:var(--navy);text-decoration:none;font-size:0.9rem;font-weight:500;padding:2px 0;display:inline-block}
-    @media(hover:hover){.toc a:hover{color:var(--gold)}}
-    footer{text-align:center;padding:28px 16px;color:var(--mgrey);font-size:0.78rem;line-height:1.7}
+    :root {
+      --navy:   #1a2744;
+      --navy2:  #243560;
+      --gold:   #c9952a;
+      --gold2:  #e8b44e;
+      --white:  #ffffff;
+      --lgrey:  #f5f7fa;
+      --mgrey:  #6b7280;
+      --dgrey:  #374151;
+      --border: #e2e8f0;
+      --blue-bg:#dbeafe;
+      --blue-b: #3b82f6;
+      --amb-bg: #fef3c7;
+      --amb-b:  #d97706;
+      --red-bg: #fee2e2;
+      --red-b:  #dc2626;
+      --talt:   #f0f4fa;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--lgrey);
+      color: var(--dgrey);
+      line-height: 1.6;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      color: var(--white);
+      padding: 40px 16px 30px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201,149,42,0.25);
+      border: 1px solid var(--gold);
+      color: var(--gold2);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 8vw, 3rem);
+      line-height: 1.25;
+      max-width: 700px;
+      margin: 0 auto 12px;
+    }
+    .hero p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    /* ── KPI STRIP ── */
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background: var(--white);
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .kpi {
+      padding: 16px 12px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+    }
+    .kpi:nth-child(even) { border-right: none; }
+    .kpi:nth-last-child(-n+2) { border-bottom: none; }
+    
+    .kpi-val {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+    .kpi-label {
+      font-size: 0.65rem;
+      color: var(--mgrey);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px 50px;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-top: 24px;
+      overflow: hidden;
+    }
+    .section-header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-num {
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 0.75rem;
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-header h2 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .section-body { padding: 16px; }
+
+    /* ── SUBSECTIONS ── */
+    .subsec-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 20px 0 8px;
+    }
+    .subsec-title:first-child { margin-top: 0; }
+    p { margin-bottom: 12px; font-size: 0.94rem; }
+
+    /* ── TABLES ── */
+    .tbl-wrap { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+    table.dt { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 320px; }
+    table.dt thead tr { background: var(--navy); color: var(--white); }
+    table.dt thead th { padding: 10px 12px; text-align: left; font-weight: 600; font-size: 0.8rem; }
+    table.dt tbody tr:nth-child(odd)  { background: var(--white); }
+    table.dt tbody tr:nth-child(even) { background: var(--talt); }
+    table.dt tbody tr:last-child.total-row { background: var(--lgrey); font-weight: 700; color: var(--navy); border-top: 2px solid var(--navy); }
+    table.dt td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    table.dt td.right { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    /* ── CALC TABLE ── */
+    table.calc { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 12px 0; min-width: 280px; }
+    table.calc tr td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    table.calc tr:nth-child(odd)  td { background: var(--white); }
+    table.calc tr:nth-child(even) td { background: var(--talt); }
+    table.calc tr.total td { background: var(--lgrey); font-weight: 700; color: var(--navy); font-size: 0.95rem; border-top: 2px solid var(--navy); }
+    table.calc tr.spacer td { background: var(--white); color: var(--mgrey); font-style: italic; }
+    table.calc .r { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    /* ── ALERT BOXES ── */
+    .alert {
+      border-left: 4px solid;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 14px;
+      margin: 14px 0;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .alert.info    { background: var(--blue-bg); border-color: var(--blue-b); color: #1e40af; }
+    .alert.warning { background: var(--amb-bg);  border-color: var(--amb-b);  color: #92400e; }
+    .alert.caution { background: var(--red-bg);  border-color: var(--red-b);  color: #991b1b; }
+    .alert strong { display: block; margin-bottom: 4px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.06em; }
+
+    /* ── KPI (inline) ── */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      background: var(--navy);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 16px 0;
+    }
+    .kpi-row .kp {
+      padding: 16px 12px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .kpi-row .kp:last-child { border-bottom: none; }
+    .kpi-row .kv { font-size: 1.4rem; font-weight: 700; color: var(--white); }
+    .kpi-row .kl { font-size: 0.7rem; color: #94a3b8; margin-top: 4px; }
+
+    /* ── CHECKLIST ── */
+    .checklist { list-style: none; }
+    .checklist li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .chk-box {
+      width: 18px; height: 18px;
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 3px;
+      background: var(--white);
+    }
+    .checklist li strong { color: var(--navy); }
+
+    /* ── SUMMARY STRIP ── */
+    .summary-strip {
+      background: var(--navy);
+      border-radius: 12px;
+      margin-top: 28px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .summary-strip .sh {
+      padding: 14px 16px;
+      background: rgba(0,0,0,0.2);
+      font-weight: 700;
+      color: var(--white);
+      font-size: 0.9rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      white-space: nowrap;
+    }
+    table.sum { width: 100%; border-collapse: collapse; min-width: 320px; }
+    table.sum tr td {
+      padding: 10px 16px;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      vertical-align: top;
+    }
+    table.sum tr:nth-child(even) td { background: rgba(255,255,255,0.04); }
+    table.sum tr.sum-total td {
+      color: var(--gold2);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-top: 1px solid var(--gold);
+    }
+    table.sum .sr { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 30px 16px;
+      color: var(--mgrey);
+      font-size: 0.8rem;
+      line-height: 1.6;
+    }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-top: 24px;
+      padding: 16px;
+    }
+    .toc h3 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--mgrey); margin-bottom: 10px; }
+    .toc ol { padding-left: 20px; font-size: 0.9rem; }
+    .toc li { margin-bottom: 8px; }
+    .toc a { color: var(--navy); text-decoration: none; font-weight: 500; }
+    .toc a:hover { color: var(--gold); text-decoration: underline; }
+
+    /* ── DESKTOP & TABLET MEDIA QUERIES (Min-Width Enhancements) ── */
+    @media (min-width: 640px) {
+      .hero { padding: 60px 20px 50px; }
+      .hero-badge { font-size: 0.75rem; padding: 4px 16px; margin-bottom: 18px; }
+      .hero p { font-size: 0.95rem; }
+
+      .container { padding: 0 20px 60px; }
+      
+      .kpi-strip { grid-template-columns: repeat(4, 1fr); border-bottom-width: 4px; }
+      .kpi { padding: 22px 16px; border-bottom: none; border-right: 1px solid var(--border); }
+      .kpi:nth-child(even) { border-right: 1px solid var(--border); }
+      .kpi:last-child { border-right: none; }
+      .kpi-val { font-size: 1.7rem; }
+      .kpi-label { font-size: 0.72rem; }
+
+      .section { margin-top: 28px; }
+      .section-header { padding: 16px 24px; }
+      .section-header h2 { font-size: 1.05rem; }
+      .section-body { padding: 24px; }
+      .subsec-title { font-size: 0.9rem; margin: 24px 0 10px; }
+      
+      table.dt { font-size: 0.9rem; }
+      table.dt thead th { padding: 12px 16px; }
+      table.dt td { padding: 12px 16px; }
+
+      table.calc { font-size: 0.9rem; }
+      table.calc tr td { padding: 10px 16px; }
+      table.calc tr.total td { font-size: 1.05rem; }
+      
+      .alert { padding: 16px 20px; font-size: 0.9rem; }
+      
+      .kpi-row { grid-template-columns: repeat(3, 1fr); }
+      .kpi-row .kp { border-bottom: none; border-right: 1px solid rgba(255,255,255,0.1); padding: 20px 16px; }
+      .kpi-row .kp:last-child { border-right: none; }
+      .kpi-row .kv { font-size: 1.6rem; }
+      
+      .checklist li { padding: 10px 0; font-size: 0.95rem; }
+      .chk-box { width: 20px; height: 20px; margin-top: 2px; }
+
+      .summary-strip .sh { padding: 16px 24px; font-size: 0.95rem; }
+      table.sum tr td { padding: 12px 24px; font-size: 0.9rem; }
+      table.sum tr.sum-total td { font-size: 1.05rem; }
+      
+      .toc { padding: 24px; margin-top: 28px; }
+      .toc ol { font-size: 0.95rem; }
+    }
+
+    @media print {
+      .hero { padding: 30px 20px; background: var(--navy); color: var(--white); }
+      .section { box-shadow: none; border: 1px solid var(--border); page-break-inside: avoid; }
+      .summary-strip { page-break-inside: avoid; }
+    }
   </style>
 </head>
 <body>
+
+<!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">Confidential &mdash; Private &amp; Family Reference</div>
-  <h1>Philip Harrison<br>Lanzarote Property Sale<br>Spanish Capital Gains Tax<br>Breakdown Report</h1>
+  <div class="hero-badge">Confidential — Private & Family Reference</div>
+  <h1>Philip Harrison<br>Lanzarote Property Sale<br>Spanish Capital Gains Tax Report</h1>
   <p>Los Romeros Limited &mdash; Company No. 06993349</p>
   <p>Prepared: 28 March 2026 &nbsp;&bull;&nbsp; AI Advisory Team</p>
 </div>
+
+<!-- KPI STRIP -->
 <div class="kpi-strip">
-  <div class="kpi"><div class="kpi-val">~&euro;18,783</div><div class="kpi-label">Total Spanish Tax</div></div>
-  <div class="kpi"><div class="kpi-val">&euro;9,600</div><div class="kpi-label">Withheld at Notary</div></div>
-  <div class="kpi"><div class="kpi-val">~&euro;9,183</div><div class="kpi-label">Balance: Modelo 210</div></div>
-  <div class="kpi"><div class="kpi-val">&pound;25,069</div><div class="kpi-label">Director&rsquo;s Loan (tax-free)</div></div>
+  <div class="kpi">
+    <div class="kpi-val">~&euro;18,783</div>
+    <div class="kpi-label">Total Spanish Tax</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-val">&euro;9,600</div>
+    <div class="kpi-label">Withheld at Notary</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-val">~&euro;9,183</div>
+    <div class="kpi-label">Balance on Modelo 210</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-val">&pound;25,069</div>
+    <div class="kpi-label">Director&rsquo;s Loan (tax-free)</div>
+  </div>
 </div>
+
 <div class="container">
-  <div class="alert info" style="margin-top:20px;"><strong>&#9432; Planning Estimates Only</strong>All figures are based on standard Canary Islands rates. Must be verified by a qualified Spanish <em>asesor fiscal</em> and UK Chartered Tax Adviser before any formal filing.</div>
-  <div class="toc"><h3>Contents</h3><ol>
-    <li><a href="#part1">Background: The Property &amp; The Company</a></li>
-    <li><a href="#part2">How Spanish Capital Gains Tax Works</a></li>
-    <li><a href="#part3">The Full CGT Calculation</a></li>
-    <li><a href="#part4">What the Company Accounts Show</a></li>
-    <li><a href="#part5">The Bigger Picture After the Sale</a></li>
-    <li><a href="#part6">Action Plan Checklist</a></li>
-    <li><a href="#summary">Quick Reference Summary</a></li>
-  </ol></div>
 
+  <div class="alert info" style="margin-top:24px;">
+    <strong>&#9432; Planning Estimates Only</strong>
+    All figures are based on standard Canary Islands rates and typical transaction costs. They must be verified by a qualified Spanish <em>asesor fiscal</em> and UK Chartered Tax Adviser before any formal filing.
+  </div>
+
+  <!-- TOC -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#part1">Background: The Property &amp; The Company</a></li>
+      <li><a href="#part2">How Spanish Capital Gains Tax Works</a></li>
+      <li><a href="#part3">The Full CGT Calculation</a></li>
+      <li><a href="#part4">What the Company Accounts Show</a></li>
+      <li><a href="#part5">The Bigger Picture After the Sale</a></li>
+      <li><a href="#part6">Action Plan Checklist</a></li>
+      <li><a href="#summary">Quick Reference Summary</a></li>
+    </ol>
+  </div>
+
+  <!-- PART 1 -->
   <div class="section" id="part1">
-    <div class="section-header"><div class="section-num">1</div><h2>Background: The Property &amp; The Company</h2></div>
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2>Background: The Property &amp; The Company</h2>
+    </div>
     <div class="section-body">
+
       <p class="subsec-title">The Company: Los Romeros Limited</p>
-      <div class="tbl-wrap"><table class="dt"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td>Company Number</td><td>06993349</td></tr><tr><td>Type</td><td>UK Private Limited Company</td></tr>
-        <tr><td>Director</td><td>Philip Harrison</td></tr><tr><td>Purpose</td><td>Holding vehicle for the Lanzarote property</td></tr>
-      </tbody></table></div>
+      <div class="tbl-wrap">
+        <table class="dt">
+          <thead><tr><th>Detail</th><th>Information</th></tr></thead>
+          <tbody>
+            <tr><td>Company Number</td><td>06993349</td></tr>
+            <tr><td>Type</td><td>UK Private Limited Company</td></tr>
+            <tr><td>Director</td><td>Philip Harrison</td></tr>
+            <tr><td>Purpose</td><td>Holding vehicle for the Lanzarote property</td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <p class="subsec-title" style="margin-top:20px;">The Property</p>
-      <div class="tbl-wrap"><table class="dt"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td>Location</td><td>North of Playa Blanca, Lanzarote, Canary Islands</td></tr>
-        <tr><td>Description</td><td>2-bed, 1-bath &mdash; no swimming pool</td></tr>
-        <tr><td>Municipality</td><td>Yaiza (covers Playa Blanca)</td></tr>
-      </tbody></table></div>
+      <div class="tbl-wrap">
+        <table class="dt">
+          <thead><tr><th>Detail</th><th>Information</th></tr></thead>
+          <tbody>
+            <tr><td>Location</td><td>North of Playa Blanca, Lanzarote, Canary Islands, Spain</td></tr>
+            <tr><td>Description</td><td>2-bedroom, 1-bathroom &mdash; no swimming pool</td></tr>
+            <tr><td>Municipality</td><td>Yaiza (covers Playa Blanca)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <p class="subsec-title" style="margin-top:20px;">Ownership Timeline</p>
-      <div class="tbl-wrap"><table class="dt"><thead><tr><th>Date</th><th>Event</th><th>Price</th></tr></thead><tbody>
-        <tr><td style="white-space:nowrap">2011</td><td>Los Romeros Limited bought the property</td><td class="right">&euro;200,000</td></tr>
-        <tr><td style="white-space:nowrap">June 2019</td><td>Philip Harrison <strong>personally bought</strong> it from the company</td><td class="right"><strong>&euro;185,000</strong></td></tr>
-        <tr><td style="white-space:nowrap">2026 (planned)</td><td>Philip intends to <strong>sell</strong></td><td class="right"><strong>&euro;320,000</strong></td></tr>
-      </tbody></table></div>
-      <div class="alert warning" style="margin-top:16px;"><strong>&#9888; Important</strong>The 2011 price of &euro;200,000 is <strong>irrelevant</strong> for Spanish CGT. AEAT will use <strong>&euro;185,000</strong> &mdash; the price on the 2019 <em>Escritura de Compraventa</em>.</div>
+      <div class="tbl-wrap">
+        <table class="dt">
+          <thead><tr><th>Date</th><th>Event</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><td>2011</td><td>Los Romeros Limited purchased the property</td><td class="right">&euro;200,000</td></tr>
+            <tr><td>June 2019</td><td>Philip Harrison <strong>personally bought</strong> the property from the company</td><td class="right"><strong>&euro;185,000</strong></td></tr>
+            <tr><td>2026 (planned)</td><td>Philip intends to <strong>sell</strong> the property</td><td class="right"><strong>&euro;320,000</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert warning" style="margin-top:16px;">
+        <strong>&#9888; Important</strong>
+        The 2011 purchase price of &euro;200,000 is <strong>irrelevant</strong> for Spanish CGT purposes. The clock restarted in June 2019 when Philip personally bought the property. AEAT (the Spanish tax authority) will use <strong>&euro;185,000</strong> as the acquisition cost &mdash; the price stated in the 2019 Spanish deed (<em>Escritura de Compraventa</em>).
+      </div>
     </div>
   </div>
 
+  <!-- PART 2 -->
   <div class="section" id="part2">
-    <div class="section-header"><div class="section-num">2</div><h2>How Spanish Capital Gains Tax Works</h2></div>
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2>How Spanish Capital Gains Tax Works</h2>
+    </div>
     <div class="section-body">
-      <p>When a non-resident sells Spanish property, the government charges <strong>IRNR</strong> (<em>Impuesto sobre la Renta de No Residentes</em>) &mdash; Spain&rsquo;s CGT for foreign owners.</p>
-      <p class="subsec-title">Step 1 &mdash; Completion Day (Modelo 211)</p>
-      <p>The buyer&rsquo;s solicitor withholds <strong>3% of the sale price</strong> automatically and pays it to AEAT within 30 days.</p>
-      <div class="alert info"><strong>&#9432; Key Fact</strong>On a &euro;320,000 sale: <strong>&euro;9,600 is withheld automatically on completion day.</strong></div>
-      <p class="subsec-title">Step 2 &mdash; Within 3 Months (Modelo 210)</p>
-      <p>Philip files a <strong>Modelo 210</strong> return showing all deductions. Final tax rate: <strong>19%</strong>.</p>
-      <div class="tbl-wrap"><table class="dt"><thead><tr><th>Outcome</th><th>What Happens</th></tr></thead><tbody>
-        <tr><td>Final tax &lt; &euro;9,600</td><td>Spain refunds the difference (6&ndash;18 months)</td></tr>
-        <tr><td>Final tax &gt; &euro;9,600</td><td>Philip pays the balance within 3 months</td></tr>
-      </tbody></table></div>
+      <p>When a non-resident sells a property in Spain, the Spanish government charges a tax called <strong>IRNR</strong> (<em>Impuesto sobre la Renta de No Residentes</em>) &mdash; Non-Resident Income Tax. This is Spain&rsquo;s equivalent of Capital Gains Tax for foreign property owners.</p>
+
+      <p class="subsec-title">Step 1 &mdash; At the Notary on Completion Day (Modelo 211)</p>
+      <p>The buyer&rsquo;s solicitor automatically withholds <strong>3% of the sale price</strong> and pays it directly to AEAT within 30 days. This is not the final tax &mdash; it is a deposit held by Spain while Philip&rsquo;s full return is processed.</p>
+      <div class="alert info">
+        <strong>&#9432; Key fact</strong>
+        On a &euro;320,000 sale: <strong>&euro;9,600 is withheld automatically on the day of completion.</strong> Philip does not choose this &mdash; it happens automatically.
+      </div>
+
+      <p class="subsec-title">Step 2 &mdash; Within 3 Months of Sale (Modelo 210)</p>
+      <p>Philip must file a tax return called <strong>Modelo 210</strong> with a Spanish tax agent (<em>asesor fiscal</em>). This shows the actual sale price, all allowable deductions, the true taxable gain, and the final tax owed at <strong>19%</strong>.</p>
+      <div class="tbl-wrap">
+        <table class="dt">
+          <thead><tr><th>Outcome</th><th>What Happens</th></tr></thead>
+          <tbody>
+            <tr><td>Final tax <strong>less than</strong> &euro;9,600 withheld</td><td>Spain refunds the difference (typically takes 6&ndash;18 months)</td></tr>
+            <tr><td>Final tax <strong>more than</strong> &euro;9,600 withheld</td><td>Philip pays the balance within the 3-month deadline</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
+  <!-- PART 3 -->
   <div class="section" id="part3">
-    <div class="section-header"><div class="section-num">3</div><h2>The Full CGT Calculation</h2></div>
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2>The Full CGT Calculation</h2>
+    </div>
     <div class="section-body">
-      <p class="subsec-title">Acquisition Cost (June 2019)</p>
-      <div class="tbl-wrap"><table class="calc"><tbody>
-        <tr><td>Purchase Price (<em>Escritura</em>)</td><td class="r">&euro;185,000</td></tr>
-        <tr><td>ITP &mdash; Property Transfer Tax (6.5%)</td><td class="r">&euro;12,025</td></tr>
-        <tr><td>AJD &mdash; Stamp Duty (1.0%)</td><td class="r">&euro;1,850</td></tr>
-        <tr><td>Spanish Notary Fees (~0.5%)</td><td class="r">&euro;925</td></tr>
-        <tr><td>Land Registry Fees (~0.3%)</td><td class="r">&euro;555</td></tr>
-        <tr><td>Gestor&iacute;a / Legal Fees (~0.5%)</td><td class="r">&euro;925</td></tr>
-        <tr class="total"><td><strong>Total Acquisition Cost</strong></td><td class="r"><strong>&euro;201,280</strong></td></tr>
-      </tbody></table></div>
-      <div class="alert info"><strong>&#9432; What is ITP?</strong>Spain&rsquo;s Property Transfer Tax. At 6.5% it is <strong>fully deductible</strong> from CGT &mdash; saving ~&euro;2,285 if Philip has the receipt.</div>
-      <p class="subsec-title" style="margin-top:22px;">Disposal Costs</p>
-      <div class="tbl-wrap"><table class="calc"><tbody>
-        <tr><td>Estate Agent Commission (4%)</td><td class="r">&euro;12,800</td></tr>
-        <tr><td>Spanish Notary + Legal Fees (~0.8%)</td><td class="r">&euro;2,560</td></tr>
-        <tr><td>Plusval&iacute;a Municipal Tax</td><td class="r">&euro;1,500</td></tr>
-        <tr class="total"><td><strong>Total Disposal Costs</strong></td><td class="r"><strong>&euro;16,860</strong></td></tr>
-      </tbody></table></div>
-      <div class="alert info"><strong>&#9432; What is Plusval&iacute;a?</strong>Local council tax on land value increase. Paid within 30 days of sale &mdash; and deductible.</div>
-      <p class="subsec-title" style="margin-top:22px;">Flood Repair Costs (Net of Insurance)</p>
-      <div class="tbl-wrap"><table class="calc"><tbody>
-        <tr><td>Estimated gross repair cost</td><td class="r">~&euro;7,500</td></tr>
-        <tr><td>Less: insurance payout</td><td class="r">&minus;&euro;3,500</td></tr>
-        <tr class="total"><td><strong>Net Deductible Cost</strong></td><td class="r"><strong>~&euro;4,000</strong></td></tr>
-      </tbody></table></div>
-      <p class="subsec-title" style="margin-top:22px;">Final CGT Calculation</p>
-      <div class="tbl-wrap"><table class="calc"><tbody>
-        <tr><td><strong>Sale Price</strong></td><td class="r"><strong>&euro;320,000</strong></td></tr>
-        <tr><td>Less: Acquisition Costs</td><td class="r">&minus;&euro;201,280</td></tr>
-        <tr><td>Less: Disposal Costs</td><td class="r">&minus;&euro;16,860</td></tr>
-        <tr><td>Less: Net Repair Costs</td><td class="r">&minus;&euro;4,000</td></tr>
-        <tr class="total"><td><strong>= Taxable Gain</strong></td><td class="r"><strong>&euro;98,860</strong></td></tr>
-        <tr class="spacer"><td colspan="2">&times; 19% IRNR Rate</td></tr>
-        <tr class="total"><td><strong>= Total Spanish Tax</strong></td><td class="r"><strong>~&euro;18,783</strong></td></tr>
-        <tr><td>Less: 3% Retention at Notary</td><td class="r">&minus;&euro;9,600</td></tr>
-        <tr class="total" style="background:#1a2744;color:#e8b44e;"><td><strong>= Balance Due: Modelo 210</strong></td><td class="r"><strong>~&euro;9,183</strong></td></tr>
-      </tbody></table></div>
+
+      <p class="subsec-title">What Philip Paid to Acquire the Property (June 2019)</p>
+      <p>Every legitimate cost of purchase is deductible from the taxable gain.</p>
+      <div class="tbl-wrap">
+        <table class="calc">
+          <tbody>
+            <tr><td>Purchase Price (<em>Escritura</em>)</td><td class="r">&euro;185,000</td></tr>
+            <tr><td>ITP &mdash; Property Transfer Tax (6.5%)</td><td class="r">&euro;12,025</td></tr>
+            <tr><td>AJD &mdash; Stamp Duty (1.0%)</td><td class="r">&euro;1,850</td></tr>
+            <tr><td>Spanish Notary Fees (~0.5%)</td><td class="r">&euro;925</td></tr>
+            <tr><td>Land Registry Fees (~0.3%)</td><td class="r">&euro;555</td></tr>
+            <tr><td>Gestor&iacute;a / Legal Fees (~0.5%)</td><td class="r">&euro;925</td></tr>
+            <tr class="total"><td><strong>Total Acquisition Cost</strong></td><td class="r"><strong>&euro;201,280</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alert info">
+        <strong>&#9432; What is ITP?</strong>
+        The <em>Impuesto sobre Transmisiones Patrimoniales</em> is Spain&rsquo;s Property Transfer Tax &mdash; equivalent to UK Stamp Duty Land Tax. At 6.5% in the Canary Islands it is one of the largest purchase costs <strong>and is fully deductible</strong> from the CGT calculation &mdash; saving approximately &euro;2,285 in Spanish tax if Philip can find the receipt.
+      </div>
+
+      <p class="subsec-title" style="margin-top:22px;">Costs of Selling the Property (Estimated)</p>
+      <div class="tbl-wrap">
+        <table class="calc">
+          <tbody>
+            <tr><td>Estate Agent Commission (4%)</td><td class="r">&euro;12,800</td></tr>
+            <tr><td>Spanish Notary + Legal Fees (~0.8%)</td><td class="r">&euro;2,560</td></tr>
+            <tr><td>Plusval&iacute;a Municipal Tax</td><td class="r">&euro;1,500</td></tr>
+            <tr class="total"><td><strong>Total Disposal Costs</strong></td><td class="r"><strong>&euro;16,860</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alert info">
+        <strong>&#9432; What is Plusval&iacute;a?</strong>
+        A local tax charged by the Yaiza Town Council on the increase in the land&rsquo;s official cadastral value during the ownership period. Must be paid within 30 days of completion and is also deductible from the CGT calculation.
+      </div>
+
+      <p class="subsec-title" style="margin-top:22px;">Flood Repair Costs (Estimated, Net of Insurance)</p>
+      <p>Philip personally paid for flood damage repairs caused by a water pipe problem over the last two years. Only the <strong>net cost after the insurance claim</strong> is deductible. Furthermore, only <em>capital improvements</em> (e.g. replacing pipes with new infrastructure) qualify &mdash; not simple maintenance (e.g. repainting).</p>
+      <div class="tbl-wrap">
+        <table class="calc">
+          <tbody>
+            <tr><td>Estimated gross repair cost</td><td class="r">~&euro;7,500</td></tr>
+            <tr><td>Less: insurance payout (estimated)</td><td class="r">&minus;&euro;3,500</td></tr>
+            <tr class="total"><td><strong>Net Deductible Repair Cost</strong></td><td class="r"><strong>~&euro;4,000</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="subsec-title" style="margin-top:22px;">Final Estimated CGT Calculation</p>
+      <div class="tbl-wrap">
+        <table class="calc">
+          <tbody>
+            <tr><td><strong>Sale Price</strong></td><td class="r"><strong>&euro;320,000</strong></td></tr>
+            <tr><td>Less: Total Acquisition Costs (2019)</td><td class="r">&minus;&euro;201,280</td></tr>
+            <tr><td>Less: Total Disposal Costs</td><td class="r">&minus;&euro;16,860</td></tr>
+            <tr><td>Less: Net Flood Repair Costs</td><td class="r">&minus;&euro;4,000</td></tr>
+            <tr class="total"><td><strong>= Estimated Taxable Gain</strong></td><td class="r"><strong>&euro;98,860</strong></td></tr>
+            <tr class="spacer"><td colspan="2">&times; 19% IRNR (Non-Resident Income Tax) Rate</td></tr>
+            <tr class="total"><td><strong>= Estimated Total Spanish Tax</strong></td><td class="r"><strong>~&euro;18,783</strong></td></tr>
+            <tr><td>Less: 3% Retention withheld at Notary</td><td class="r">&minus;&euro;9,600</td></tr>
+            <tr class="total" style="background:#1a2744;color:#e8b44e;"><td><strong>= Balance Due on Modelo 210</strong></td><td class="r"><strong>~&euro;9,183</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="kpi-row">
         <div class="kp"><div class="kv">~&euro;18,783</div><div class="kl">Total Spanish Tax</div></div>
         <div class="kp"><div class="kv">&euro;9,600</div><div class="kl">Withheld at Notary</div></div>
         <div class="kp"><div class="kv">~&euro;9,183</div><div class="kl">Balance via Modelo 210</div></div>
       </div>
+
+      <p style="font-size:0.82rem; color:var(--mgrey); margin-top:8px;">
+        <em>Note: If the flood repairs cannot be argued as a capital improvement, the taxable gain rises to ~&euro;102,860 and the balance due rises to approximately &euro;9,944.</em>
+      </p>
     </div>
   </div>
 
+  <!-- PART 4 -->
   <div class="section" id="part4">
-    <div class="section-header"><div class="section-num">4</div><h2>What the Company Accounts Show</h2></div>
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2>What the Company Accounts Show</h2>
+    </div>
     <div class="section-body">
-      <p class="subsec-title">Director&rsquo;s Loan Account</p>
-      <p>Money Philip has personally funded the company with. Returned <strong>completely tax-free</strong> at MVL wind-up.</p>
-      <div class="tbl-wrap"><table class="dt"><thead><tr><th>Year End</th><th>Balance</th><th>Increase</th></tr></thead><tbody>
-        <tr><td>Aug 2022</td><td class="right">&pound;11,270</td><td>&mdash;</td></tr>
-        <tr><td>Aug 2023</td><td class="right">&pound;14,888</td><td>+&pound;3,618</td></tr>
-        <tr><td>Aug 2024</td><td class="right">&pound;19,373</td><td>+&pound;4,485</td></tr>
-        <tr><td><strong>Aug 2025</strong></td><td class="right"><strong>&pound;25,069</strong></td><td>+&pound;5,696</td></tr>
-      </tbody></table></div>
-      <div class="alert info" style="margin-top:14px;"><strong>&#9432; Tax-Free Recovery</strong><strong>&pound;25,069 returned to Philip TAX-FREE</strong> at MVL. It is a debt repayment, not income.</div>
+
+      <p class="subsec-title">Director&rsquo;s Loan Account &mdash; Money the Company Owes Philip</p>
+      <p>The annual accounts for Los Romeros Limited (filed at Companies House every August) show a <strong>Director&rsquo;s Loan Account</strong>. This is money Philip has personally put into the company over the years to cover running costs &mdash; accountancy fees, Companies House fees, insurance, and any property costs he paid personally. The company legally owes this money back to Philip.</p>
+
+      <div class="tbl-wrap">
+        <table class="dt">
+          <thead><tr><th>Year End (31 August)</th><th>Director&rsquo;s Loan Balance</th><th>Year-on-Year Increase</th></tr></thead>
+          <tbody>
+            <tr><td>2022</td><td class="right">&pound;11,270</td><td>&mdash;</td></tr>
+            <tr><td>2023</td><td class="right">&pound;14,888</td><td>+&pound;3,618</td></tr>
+            <tr><td>2024</td><td class="right">&pound;19,373</td><td>+&pound;4,485</td></tr>
+            <tr><td><strong>2025</strong></td><td class="right"><strong>&pound;25,069</strong></td><td>+&pound;5,696</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert info" style="margin-top:14px;">
+        <strong>&#9432; Tax-Free Recovery</strong>
+        The <strong>&pound;25,069 Director&rsquo;s Loan is returned to Philip completely TAX-FREE</strong> when the company is wound up via MVL. It is not a profit or a gain &mdash; it is simply the company repaying a debt it owes to Philip.
+      </div>
+
+      <p class="subsec-title" style="margin-top:20px;">Investment Property in the Accounts</p>
+      <p>The property has been carried at <strong>&pound;159,634</strong> in every year&rsquo;s balance sheet &mdash; unchanged. This is the original GBP cost basis when the company first acquired it. This figure is for UK accounting purposes only and does <em>not</em> affect the Spanish CGT calculation.</p>
+
       <p class="subsec-title" style="margin-top:20px;">Post-August 2025 Repair Costs</p>
-      <p>Costs paid after 31 August 2025 fall into the 2026 accounts. Philip should give his accountant a full list (with bank statements) of every personal payment made after that date &mdash; every pound added to the Director&rsquo;s Loan is recovered tax-free.</p>
+      <p>Since the accounts run 1 September to 31 August, any costs Philip paid after 31 August 2025 fall into the <strong>2026 accounting year</strong>. These should appear in the 2026 accounts &mdash; the final accounts before the MVL wind-up. Philip should provide his accountant with:</p>
+      <ul style="margin-left:20px; margin-top:6px; font-size:0.91rem; line-height:1.8;">
+        <li>A complete list of every personal payment made for the property after 31 August 2025</li>
+        <li>Bank statements or receipts to support each entry</li>
+      </ul>
+      <p style="margin-top:10px;">Every pound added to the Director&rsquo;s Loan Account is recovered <strong>tax-free</strong> at wind-up.</p>
     </div>
   </div>
 
+  <!-- PART 5 -->
   <div class="section" id="part5">
-    <div class="section-header"><div class="section-num">5</div><h2>The Bigger Picture After the Sale</h2></div>
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2>The Bigger Picture After the Sale</h2>
+    </div>
     <div class="section-body">
-      <div class="tbl-wrap"><table class="dt"><thead><tr><th>Topic</th><th>Summary</th></tr></thead><tbody>
-        <tr><td><strong>UK Corporation Tax</strong></td><td>Declares disposal to HMRC. Spanish tax credited via UK&ndash;Spain Double Tax Agreement (FTCR).</td></tr>
-        <tr><td><strong>Extracting Money (MVL)</strong></td><td>Members&rsquo; Voluntary Liquidation. CGT rates (18&ndash;24%) vs dividends at up to 39.35% income tax.</td></tr>
-        <tr><td><strong>FX Risk</strong></td><td>Use Currencies Direct or TorFX. High-street banks waste &pound;6,400&ndash;&pound;12,800 in spread on &euro;320,000.</td></tr>
-        <tr><td><strong>Estate Planning</strong></td><td>Review Will, IHT, and trusts with a STEP solicitor once cash lands personally after MVL.</td></tr>
-      </tbody></table></div>
+      <p>This report focuses on the Spanish CGT. Once the sale proceeds land in Los Romeros Limited&rsquo;s bank account, there are further UK steps to navigate.</p>
+
+      <div class="tbl-wrap" style="margin-top:14px;">
+        <table class="dt">
+          <thead><tr><th>Topic</th><th>Summary</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>UK Corporation Tax</strong></td>
+              <td>The company must declare the disposal to HMRC. Spanish tax paid can be credited against the UK Corporation Tax liability via the UK&ndash;Spain Double Taxation Agreement (Foreign Tax Credit Relief &mdash; FTCR).</td>
+            </tr>
+            <tr>
+              <td><strong>Extracting the Money (MVL)</strong></td>
+              <td>Wind up via Members&rsquo; Voluntary Liquidation administered by a licensed Insolvency Practitioner. Capital distribution taxed at CGT rates (18&ndash;24%) &mdash; far better than dividends at up to 39.35% income tax.</td>
+            </tr>
+            <tr>
+              <td><strong>FX Risk</strong></td>
+              <td>Use a specialist FX broker (e.g. Currencies Direct, TorFX) &mdash; not Barclays, HSBC, or any high-street bank. A high-street bank would cost approximately &pound;6,400&ndash;&pound;12,800 in unnecessary exchange spread on &euro;320,000.</td>
+            </tr>
+            <tr>
+              <td><strong>Estate Planning</strong></td>
+              <td>Once cash lands in Philip&rsquo;s personal account after the MVL, a STEP-registered Private Client Solicitor should review his Will, IHT position, and any trust or gifting strategies.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
+  <!-- PART 6 -->
   <div class="section" id="part6">
-    <div class="section-header"><div class="section-num">6</div><h2>Action Plan Checklist</h2></div>
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2>Action Plan Checklist</h2>
+    </div>
     <div class="section-body">
-      <p class="subsec-title">A &mdash; Before Sale Completes</p>
+
+      <p class="subsec-title">A &mdash; Immediate Priority (Before Sale Completes)</p>
       <ul class="checklist">
-        <li><div class="chk-box"></div><div>Find the <strong>2019 Escritura de Compraventa</strong> &mdash; confirms the &euro;185,000 acquisition cost AEAT will use.</div></li>
-        <li><div class="chk-box"></div><div>Find the <strong>2019 ITP receipt</strong> &mdash; saves ~&euro;2,285 in Spanish tax.</div></li>
-        <li><div class="chk-box"></div><div>Gather all <strong>2019 purchase receipts</strong> &mdash; Notary, Land Registry, gestor&iacute;a invoices.</div></li>
-        <li><div class="chk-box"></div><div>Collect all <strong>flood repair receipts</strong> &mdash; separate Philip&rsquo;s payments from the insurance payout.</div></li>
-        <li><div class="chk-box"></div><div>Obtain the <strong>insurance claim settlement documents</strong>.</div></li>
-        <li><div class="chk-box"></div><div>Instruct a <strong>Spanish asesor fiscal</strong> &mdash; for Modelo 211 and Modelo 210.</div></li>
-        <li><div class="chk-box"></div><div>Confirm the <strong>Plusval&iacute;a figure</strong> with Yaiza Ayuntamiento &mdash; payable within 30 days of sale.</div></li>
-        <li><div class="chk-box"></div><div>Open account with <strong>Currencies Direct or TorFX</strong> &mdash; not a high-street bank.</div></li>
+        <li><div class="chk-box"></div><div>Locate the <strong>2019 Escritura de Compraventa</strong> &mdash; the Spanish deed from when Philip personally bought the property for &euro;185,000. This is the single most important document. Without it, AEAT may disallow the &euro;185,000 acquisition cost and assess CGT on a much larger gain.</div></li>
+        <li><div class="chk-box"></div><div>Find the <strong>2019 ITP receipt</strong> &mdash; proof the 6.5% transfer tax (~&euro;12,025) was paid to the Canary Islands government. This alone saves approximately &euro;2,285 in Spanish tax if documented.</div></li>
+        <li><div class="chk-box"></div><div>Gather all <strong>2019 purchase receipts</strong> &mdash; Notary invoice, Land Registry fee receipts, and any gestor&iacute;a or solicitor invoices from the original purchase transaction.</div></li>
+        <li><div class="chk-box"></div><div>Collect all <strong>flood repair receipts and invoices</strong> &mdash; every payment Philip made personally for the water pipe flooding work. Separate his personal outlay from what the insurance covered.</div></li>
+        <li><div class="chk-box"></div><div>Obtain the <strong>insurance claim settlement documents</strong> &mdash; shows exactly what the insurer paid out, confirming Philip&rsquo;s net personal outlay (the only deductible amount).</div></li>
+        <li><div class="chk-box"></div><div>Instruct a <strong>Spanish asesor fiscal</strong> (a registered tax agent with an AEAT digital certificate) &mdash; required to file both the Modelo 211 (completion day) and the Modelo 210 (within 3 months of sale). Do not attempt this without a specialist.</div></li>
+        <li><div class="chk-box"></div><div>Confirm the <strong>Plusval&iacute;a figure</strong> with the Yaiza (<em>Ayuntamiento</em>) Town Council before or at completion &mdash; it must be paid within 30 days of the sale date.</div></li>
+        <li><div class="chk-box"></div><div>Open an account with a <strong>specialist FX broker</strong> (Currencies Direct or TorFX) before the sale completes &mdash; do not use a high-street bank for the Euro-to-GBP conversion.</div></li>
       </ul>
-      <p class="subsec-title" style="margin-top:24px;">B &mdash; Within 3 Months of Sale</p>
+
+      <p class="subsec-title" style="margin-top:24px;">B &mdash; Within 3 Months of Sale Completing</p>
       <ul class="checklist">
-        <li><div class="chk-box"></div><div>File the <strong>Modelo 210</strong> &mdash; pay balance of ~&euro;9,183.</div></li>
-        <li><div class="chk-box"></div><div>Pay <strong>Plusval&iacute;a Municipal tax</strong> to Yaiza Ayuntamiento within 30 days.</div></li>
-        <li><div class="chk-box"></div><div>Place a <strong>forward FX contract</strong> if awaiting an AEAT refund.</div></li>
+        <li><div class="chk-box"></div><div>File the <strong>Modelo 210</strong> with the Spanish asesor fiscal &mdash; declare all deductions and pay the estimated balance (~&euro;9,183).</div></li>
+        <li><div class="chk-box"></div><div>Pay the <strong>Plusval&iacute;a Municipal tax</strong> to the Yaiza Ayuntamiento within 30 days of the completion date.</div></li>
+        <li><div class="chk-box"></div><div>Place a <strong>forward FX contract</strong> on the AEAT refund amount if applicable &mdash; the refund takes 6&ndash;18 months and the EUR/GBP rate could move unfavourably in the meantime.</div></li>
       </ul>
-      <p class="subsec-title" style="margin-top:24px;">C &mdash; UK Company Actions</p>
+
+      <p class="subsec-title" style="margin-top:24px;">C &mdash; UK Company Actions After the Sale</p>
       <ul class="checklist">
-        <li><div class="chk-box"></div><div>Give accountant <strong>full list of personal payments after 31 Aug 2025</strong> to add to Director&rsquo;s Loan.</div></li>
-        <li><div class="chk-box"></div><div>Instruct a <strong>UK CTA</strong> to file the CT600 with Foreign Tax Credit Relief.</div></li>
-        <li><div class="chk-box"></div><div>Instruct a <strong>licensed Insolvency Practitioner</strong> to administer the MVL of Los Romeros Limited.</div></li>
-        <li><div class="chk-box"></div><div>Review <strong>Philip&rsquo;s Will and estate plan</strong> with a STEP solicitor once cash lands personally.</div></li>
+        <li><div class="chk-box"></div><div>Provide the accountant with a <strong>complete list of all personal payments</strong> made for the property after 31 August 2025 (with bank statements) &mdash; to be added to the Director&rsquo;s Loan and recovered tax-free at MVL.</div></li>
+        <li><div class="chk-box"></div><div>Instruct a <strong>UK Chartered Tax Adviser (CTA)</strong> to file the Corporation Tax return (CT600) applying Foreign Tax Credit Relief to offset Spanish tax paid against the UK tax liability.</div></li>
+        <li><div class="chk-box"></div><div>Instruct a <strong>licensed Insolvency Practitioner</strong> to administer the Members&rsquo; Voluntary Liquidation (MVL) of Los Romeros Limited &mdash; the most tax-efficient method of extracting the net proceeds.</div></li>
+        <li><div class="chk-box"></div><div>Review <strong>Philip&rsquo;s Will and estate plan</strong> with a STEP-registered Private Client Solicitor once cash lands in his personal account after the MVL &mdash; particularly the IHT position.</div></li>
       </ul>
-      <div class="alert caution" style="margin-top:20px;"><strong>&#9888; Caution</strong>Planning estimates only. Always engage a qualified Spanish asesor fiscal and UK CTA before the sale completes.</div>
+
+      <div class="alert caution" style="margin-top:20px;">
+        <strong>&#9888; Caution</strong>
+        These are planning estimates. Actual figures depend on deductions provable by receipts and professional filings. Every document recovered could reduce the final tax bill. Always engage a qualified Spanish asesor fiscal and UK Chartered Tax Adviser before the sale completes.
+      </div>
     </div>
   </div>
 
+  <!-- QUICK REFERENCE SUMMARY -->
   <div class="summary-strip" id="summary">
     <div class="sh">Quick Reference Summary</div>
-    <table class="sum"><tbody>
-      <tr><td>Sale Price</td><td class="sr">&euro;320,000</td></tr>
-      <tr><td>Total Deductions</td><td class="sr">~&euro;221,140</td></tr>
-      <tr><td>Estimated Taxable Gain</td><td class="sr">~&euro;98,860</td></tr>
-      <tr><td>Total Spanish Tax @ 19%</td><td class="sr">~&euro;18,783</td></tr>
-      <tr><td>Withheld at Notary</td><td class="sr">&euro;9,600</td></tr>
-      <tr><td>Balance via Modelo 210</td><td class="sr">~&euro;9,183</td></tr>
-      <tr class="sum-total"><td>Director&rsquo;s Loan &mdash; Tax-Free at MVL</td><td class="sr">&pound;25,069</td></tr>
-    </tbody></table>
+    <table class="sum">
+      <tbody>
+        <tr><td>Sale Price</td><td class="sr">&euro;320,000</td></tr>
+        <tr><td>Total Deductions (acquisition + disposal + repairs)</td><td class="sr">~&euro;221,140</td></tr>
+        <tr><td>Estimated Taxable Gain (Spain)</td><td class="sr">~&euro;98,860</td></tr>
+        <tr><td>Total Spanish Tax @ 19% IRNR</td><td class="sr">~&euro;18,783</td></tr>
+        <tr><td>Withheld at Notary on Completion Day</td><td class="sr">&euro;9,600</td></tr>
+        <tr><td>Balance to Pay via Modelo 210 (within 3 months)</td><td class="sr">~&euro;9,183</td></tr>
+        <tr class="sum-total"><td>Director&rsquo;s Loan &mdash; Tax-Free Recovery at MVL</td><td class="sr">&pound;25,069</td></tr>
+      </tbody>
+    </table>
   </div>
-</div>
+
+</div><!-- /container -->
+
 <footer>
-  <p>Philip Harrison &mdash; Lanzarote Property Sale &mdash; Spanish CGT Breakdown Report</p>
-  <p>Los Romeros Limited (No. 06993349) &mdash; Prepared 28 March 2026</p>
-  <p style="margin-top:8px;color:#9ca3af;">Planning purposes only &mdash; not professional tax advice. Consult a qualified Spanish <em>asesor fiscal</em> and UK CTA.</p>
+  <p>Philip Harrison &mdash; Lanzarote Property Sale &mdash; Spanish CGT Report</p>
+  <p>Los Romeros Limited (Company No. 06993349) &mdash; Prepared 28 March 2026</p>
+  <p style="margin-top:8px; color:#9ca3af;">This document is provided for planning purposes only and does not constitute professional tax advice.<br>
+  Always consult a qualified Spanish <em>asesor fiscal</em> and UK Chartered Tax Adviser for formal filings.</p>
 </footer>
+
 </body>
 </html>
